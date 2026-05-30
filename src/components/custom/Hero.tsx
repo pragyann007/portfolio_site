@@ -4,11 +4,13 @@ import React, { useEffect, useRef, useState } from 'react'
 import RotatingText from "../RotatingText"
 import TextType from "../TextType"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 const Hero = () => {
   const [isHovering, setIsHovering] = useState(false)
   const leftRef = useRef<HTMLDivElement>(null)
   const rightRef = useRef<HTMLDivElement>(null)
+
 
   const socials = [
     { name: 'GitHub',      url: "http://github.com/pragyann007/" },
@@ -44,6 +46,8 @@ const Hero = () => {
     window.addEventListener('mousemove', handleMouseMove)
     return () => window.removeEventListener('mousemove', handleMouseMove)
   }, [mouseX, mouseY, rightMouseX, rightMouseY])
+  const router = useRouter()
+
 
   return (
     <div className="flex flex-col lg:flex-row w-full min-h-screen lg:-mt-40 -mt-20 relative overflow-hidden">
@@ -153,6 +157,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.9 }}
           >
             <motion.button
+            onClick={()=> router.push("/works")}
               className="group relative cursor-pointer
                          h-9 px-4 text-sm font-semibold
                          lg:h-11 lg:px-7 lg:text-base
@@ -177,6 +182,7 @@ const Hero = () => {
                          border border-green-500/50 text-green-300 rounded overflow-hidden
                          hover:border-green-400 transition-colors"
               whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }}
+              onClick={() => router.push("#contact") }
             >
               <motion.div
                 className="absolute inset-0 bg-green-500/10"
