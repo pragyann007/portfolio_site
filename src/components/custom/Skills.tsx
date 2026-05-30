@@ -336,7 +336,6 @@ const Skills = () => {
               scaleOnHover
               fadeOut={false}
               ariaLabel="Technology stack"
-              useCustomRender={false}
             />
           </div>
         </motion.div>
