@@ -23,7 +23,7 @@ const NavBar = () => {
   // Calculate age with live updates
   useEffect(() => {
     const calculateAge = () => {
-      const dob = new Date(2007, 7, 2)
+      const dob = new Date(2008, 7, 2)
       const now = new Date()
       const diff = now.getTime() - dob.getTime()
 

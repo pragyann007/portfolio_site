@@ -11,6 +11,56 @@
 import type { Project } from '@/types/project'
 
 export const projects: Project[] = [
+  {
+    slug: 'baatchit',
+    title: 'BaatChit Video Calling Platform',
+    tagline: 'A platform where you can call with strangers randomly',
+    description:
+      'A full-stack learning platform designed for random starngers to come in platform and do video chating just like a omegle.',
+    image: '/baatcit.png',
+    category: 'Web App',
+    tags: ['Education', 'Full Stack', 'MERN'],
+    techStack: [
+      { icon: 'react', label: 'React' },
+      { icon: 'nodejs', label: 'Node.js' },
+      { icon: 'express', label: 'Express' },
+      { icon: 'mongodb', label: 'MongoDB' },
+      {icon:"socketio",label:"SOcket IO"}
+    ],
+    demo: 'https://baattchitt.netlify.app/',
+    status: 'Completed',
+    featured: true,
+    emoji: '⚛️',
+    year: 2026,
+  
+  },
+
+  {
+    slug: 'dns-level-adblocker',
+//     design.
+//  (Nodejs,TypeScript,UDP,Socket.io,React,Docker)
+    title: 'Real-Time DNS Sinkhole & Ad-Blocking Engine',
+    tagline: 'A DNS level ad blocking and filtering system',
+    description:
+      `Built a custom UDP DNS server that intercepts DNS queries, evaluates domains against an optimized ~80K-domain
+blocklist for O(1) lookups, and proxies allowed traffic to Cloudflare (1.1.1.1).`,
+    image: '/dnsproj.png',
+    category: 'Web App',
+    tags: ['Nodejs', 'DNS', 'UDP',"React","SOcket io"],
+    techStack: [
+      { icon: 'react', label: 'React' },
+      { icon: 'nodejs', label: 'Node.js' },
+      { icon: 'udp', label: 'UDP' },
+      { icon: 'dns', label: 'DNS' },
+      {icon:"socketio",label:"SOcket IO"}
+    ],
+    demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7500764692206731264/',
+    status: 'Completed',
+    featured: true,
+    emoji: '⚛️',
+    year: 2026,
+  
+  },
 
   {
     slug: 'durbar-physics',
@@ -37,22 +87,7 @@ export const projects: Project[] = [
       { label: 'Topics Covered', value: '100+' },
     ],
   },
-  {
-    slug: 'ashwothama',
-    title: 'Ashwothama',
-    tagline: 'Recon toolkit for bug hunters & security researchers',
-    description:
-      'A powerful reconnaissance toolkit built with Shell scripting. Integrates subfinder, httpx, eyewitness, and whois for comprehensive information gathering and vulnerability assessment — designed for efficient bug bounty hunting workflows.',
-    image: '/ashwothama.png',
-    category: 'Security Tool',
-    tags: ['Security', 'CLI', 'Shell'],
-    techStack: [{ icon: 'github', label: 'Shell / Bash' }],
-    github: 'https://github.com/pragyann007/ashwothama',
-    status: 'Completed',
-    featured: true,
-    emoji: '🛡️',
-    year: 2024,
-  },
+ 
   {
     slug: 'everest-dental',
     title: 'Everest Dental Clinic',
@@ -76,44 +111,7 @@ export const projects: Project[] = [
     ],
   },
   
-  {
-    slug: 'tradenest',
-    title: 'TradeNest',
-    tagline: 'Production-grade trading platform backend',
-    description:
-      'A robust backend system for trading applications. Features real-time data processing, secure JWT authentication, and a scalable architecture designed to handle high-frequency trading operations.',
-    image: '/trade.png',
-    category: 'Backend',
-    tags: ['Trading', 'Backend', 'API'],
-    techStack: [
-      { icon: 'nodejs', label: 'Node.js' },
-      { icon: 'express', label: 'Express' },
-      { icon: 'mongodb', label: 'MongoDB' },
-    ],
-    github: 'https://github.com/pragyann007/tradenest',
-    status: 'Completed',
-    emoji: '📈',
-    year: 2024,
-  },
-  {
-    slug: 'youtube-backend-api',
-    title: 'YouTube Backend API',
-    tagline: 'Production-grade YouTube-like backend',
-    description:
-      'A comprehensive backend mimicking YouTube\'s core functionality — video upload, streaming, user auth, comments, likes, and subscriptions. Built following industry best practices and production-ready architecture patterns.',
-    // image: '/projects/youtube-backend-api.png',
-    category: 'Backend',
-    tags: ['Video', 'Backend', 'API'],
-    techStack: [
-      { icon: 'nodejs', label: 'Node.js' },
-      { icon: 'express', label: 'Express' },
-      { icon: 'mongodb', label: 'MongoDB' },
-    ],
-    github: 'https://github.com/pragyann007/youtube-prodction-grade-api',
-    status: 'Completed',
-    emoji: '▶️',
-    year: 2023,
-  },
+  
   {
     slug: 'manage-my-tabs',
     title: 'Manage My Tabs Extension',

@@ -23,7 +23,15 @@ import {
   SiPython,
   SiNestjs,
   SiShell,
-  SiN8N
+  SiN8N,
+  SiSolidity,
+  SiLangchain,
+  SiOllama,
+  SiWordpress,
+  SiEthereum,
+  SiFoundryvirtualtabletop,
+  SiVimeo,
+  SiHiveBlockchain
 } from 'react-icons/si'
 import { TbSeo } from 'react-icons/tb'
 
@@ -63,16 +71,32 @@ const Skills = () => {
     { name: "Linux", icon: <SiLinux />, category: "DevOps", level: "Advanced", href: "https://linux.org" },
     
     // Languages
-    { name: "JavaScript", icon: <SiJavascript />, category: "Languages", level: "Advanced", href: "https://javascript.com" },
+   
     { name: "TypeScript", icon: <SiTypescript />, category: "Languages", level: "Intermediate", href: "https://typescriptlang.org" },
     { name: "Shell", icon: <SiShell />, category: "Languages", level: "Intermediate", href: "" },
     { name: "C", icon: <SiC />, category: "Languages", level: "Intermediate", href: "https://cprogramming.com" },
     { name: "Python", icon: <SiPython />, category: "Languages", level: "Intermediate", href: "https://python.org" },
     
+    { name: "Solidity", icon: <SiSolidity />, category: "Languages", level: "Intermediate", href: "" },
+
+    // ai skills
+    { name: "Python", icon: <SiPython />, category: "Gen AI", level: "Intermediate", href: "https://python.org" },
+    { name: "LangChain", icon: <SiLangchain />, category: "Gen AI", level: "Intermediate", href: "" },
+    { name: "LangGraph", icon: <SiLangchain />, category: "Gen AI", level: "Intermediate", href: "" },
+    { name: "RAG", icon: <SiOllama />, category: "Gen AI", level: "Intermediate", href: ""},
+  { name: "N8N", icon: <SiN8N />, category: "Gen AI", level: "Intermediate", href: ""},
+
+  // web3
+  { name: "Ethereum", icon: <SiEthereum />, category: "Web3", level: "Intermediate" },
+  { name: "Foundry", icon: <SiFoundryvirtualtabletop />, category: "Web3", level: "Intermediate" },
+  { name: "Blockchain", icon: <SiHiveBlockchain />, category: "Web3", level: "Intermediate" },
+
+
     // Mobile & Others
     { name: "Expo", icon: <SiExpo />, category: "Mobile", level: "Beginner", href: "https://expo.dev" },
-    { name: "N8N", icon: <SiN8N />, category: "Automation", level: "Intermediate", href: ""},
     { name: "SEO", icon: <TbSeo />, category: "Others", level: "Intermediate" },
+    { name: "Wordpress", icon: <SiWordpress />, category: "Others", level: "Intermediate" },
+
   ]
 
   const categories = [
@@ -82,7 +106,9 @@ const Skills = () => {
     { name: 'DevOps', count: skills.filter(s => s.category === 'DevOps').length },
     { name: 'Mobile', count: skills.filter(s => s.category === 'Mobile').length },
     { name: 'Languages', count: skills.filter(s => s.category === 'Languages').length },
-    { name: 'Automations', count: skills.filter(s => s.category === 'Automation').length },
+    { name: 'Gen AI', count: skills.filter(s => s.category === 'Gen AI').length },
+    { name: 'Web3', count: skills.filter(s => s.category === 'Web3').length },
+
     { name: 'Others', count: skills.filter(s => s.category === 'Others').length },
   ]
 

@@ -134,7 +134,7 @@ const Hero = () => {
               I am <span className="text-white font-medium">Pragyan Thapaliya</span>, a{" "}
               <span className="inline-block">
                 <RotatingText
-                  texts={["Frontend", "Backend", "Fullstack", "MERN"]}
+                  texts={["Backend", "Fullstack", "Gen AI","Web 3"]}
                   mainClassName="inline-block min-w-[90px] font-mono font-bold px-2 py-0.5 text-xs bg-gradient-to-r from-green-500 to-emerald-500 rounded text-center text-black shadow-lg shadow-green-500/30"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
